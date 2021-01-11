@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    display: inline;
+    height: 500px;
+}
+
+#vehicle {
+    display: inline;
+    text-align: left;
+    display: block;
+    position: relative;
+    font-size: 20px;
+    width: 25%;
+    padding: 20px;
+    word-wrap: break-word;
+    border-radius: 10px;
+    background-color: rgb(76, 180, 80);    
+
+}
+
+button {
+    text-align: left;
+    display: inline;
+    position: relative;
+    font-size: 20px;
+    width: 100%;
+    padding: 20px;
+    word-wrap: break-word;
+    border-radius: 10px;
+    background-color: #4CAF50;
+}
+
+#daynight {
+    
+    display: inline;
+    width: 25%;
+    float: right;
+    padding: 20px;
+    font-size: 20px;
+    border-color: #4CAF50;
+}
+
+select#vehicle{
+    display: inline;
+    width: 25%;
+}
+
+button#reset{
+    display: inline;
+    width: 25%;
+    word-wrap: break-word;
+}
+
+.task {
+    background: red;
+}
+
+.taskDone{
+    background: rgb(60, 255, 0);
+    animation: mymove 1s;
+}
+  
+  @keyframes mymove {
+    from {background-color: red;}
+    to {background-color: rgb(51, 255, 0);}
+  }
