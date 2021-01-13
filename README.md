@@ -1,5 +1,5 @@
 # checklist  
-Simple checklist web-app for mobile devices with lightning fast UI.  
+Simple checklist web app for mobile devices with lightning fast UI.  
   
 ## Table of contents  
 * [General info](#general-info)  
