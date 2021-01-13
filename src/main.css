@@ -44,21 +44,21 @@ button {
     background-color:darkgray;
 }
 
- /* The switch - the box around the slider */
- .switch {
+ /*day/night switch */
+ #switch {
     position: relative;
     float: right;
     width: 60px;
     height: 34px;
   }
   
-  /* Hide default html checkbox */
-  .switch input {
+  /*hide default html checkbox */
+  #switch input {
     display: none;
   }
   
-  /* Slider background day*/
-  .slider {
+  /*day background for switch*/
+  #slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -67,10 +67,12 @@ button {
     bottom: 0;
     background-color:#2196F3;
     transition: 1s ease background-color;
+    border-radius: 34px;
+    border-style: outset;
   }
   
-  /* The day slider */
-  .slider:before {
+  /*day icon for switch*/
+  #slider:before {
     position: absolute;
     content: "";
     height: 24px;
@@ -81,18 +83,12 @@ button {
     transition: 1s ease;
   }
   
-  /* Slider background night */
-  input:checked + .slider {
+  /*night background for switch*/
+  input:checked + #slider {
     background-color: #3f505e;
   }
   
-  /* The night slider */
-  input:checked + .slider:before {
+  /*night icon for switch*/
+  input:checked + #slider:before {
     background: url("sprite.png");
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-    border-style: outset;
   }
