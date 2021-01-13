@@ -1,24 +1,25 @@
 *{
     box-sizing: border-box;
+    /*background-color for smoothing page load*/
+    background-color:rgb(20, 34, 34);
 }
 
-.header{
-    display: inline;
-    height: 500px;
+header {
+    height: 100px;
 }
 
 #vehicle {
     display: inline;
     text-align: left;
-    display: block;
     position: relative;
+    width: 50%;
+    max-width: 500px;
     font-size: 20px;
-    width: 25%;
     padding: 20px;
-    word-wrap: break-word;
     border-radius: 10px;
-    background-color: rgb(76, 180, 80);    
-
+    border-style: outset;
+    background-color:darkgrey;   
+    cursor: pointer; 
 }
 
 button {
@@ -27,43 +28,19 @@ button {
     position: relative;
     font-size: 20px;
     width: 100%;
+    max-width: 1000px;
     padding: 20px;
+    margin-bottom: 2px;
     word-wrap: break-word;
     border-radius: 10px;
-    background-color: #4CAF50;
-}
-
-#daynight {
-    
-    display: inline;
-    width: 25%;
-    float: right;
-    padding: 20px;
-    font-size: 20px;
-    border-color: #4CAF50;
-}
-
-select#vehicle{
-    display: inline;
-    width: 25%;
+    border-style: outset;
+    cursor: pointer;
 }
 
 button#reset{
     display: inline;
+    position:relative;
     width: 25%;
-    word-wrap: break-word;
+    word-wrap:normal;
+    background-color:darkgray;
 }
-
-.task {
-    background: red;
-}
-
-.taskDone{
-    background: rgb(60, 255, 0);
-    animation: mymove 1s;
-}
-  
-  @keyframes mymove {
-    from {background-color: red;}
-    to {background-color: rgb(51, 255, 0);}
-  }

@@ -51,4 +51,24 @@
         <task>Task 410</task>
         <task>Task 411</task>
         <task>Task 412</task></vehicle>
+    <vehicle>
+        <name>Vehicle 5</name>
+        <task>Task 51</task>
+        <task>Task 52</task>
+        <task>Task 53</task>
+        <task>Task 54</task>
+        <task>Task 55</task></vehicle>
+     <vehicle>
+        <name>Vehicle 6</name>
+        <task>Task 61</task>
+        <task>Task 62</task>
+        <task>Task 63</task>
+        <task>Task 64</task>
+        <task>Task 65</task>
+        <task>Task 66</task>
+        <task>Task 67</task>
+        <task>Task 68</task>
+        <task>Task 69</task>
+        <task>Task 610</task>
+        <task>Task 611</task></vehicle>
 </vehicles>

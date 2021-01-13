@@ -8,9 +8,12 @@
 
     const updateStyle = () => {
         if (toggle.checked) {
+            //load both styles at page load
+            style.setAttribute('href', 'day.css');
             style.setAttribute('href', 'night.css');
         }
         else {
+            style.setAttribute('href', 'night.css');
             style.setAttribute('href', 'day.css');
         }
         localStorage.setItem('toggleState', toggle.checked);
