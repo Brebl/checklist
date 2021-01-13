@@ -73,11 +73,11 @@ button {
   .slider:before {
     position: absolute;
     content: "";
-    height: 25px;
-    width: 25px;
-    top: 1px;
-    left: 5px;
-    background: url("sprite3.png") -75px 0;
+    height: 24px;
+    width: 50px;
+    top: 3px;
+    left: 0px;
+    background: url("sprite.png") 0 -25px;
     transition: 1s ease;
   }
   
@@ -88,8 +88,7 @@ button {
   
   /* The night slider */
   input:checked + .slider:before {
-    background: url("sprite3.png") -50px 0;
-    transform: translateX(20px);
+    background: url("sprite.png");
   }
   
   /* Rounded sliders */
