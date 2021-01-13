@@ -21,40 +21,40 @@
     updateStyle();
     toggle.addEventListener('change', updateStyle);
 
-    //vehicle dropdown list component
-    const makeVehicle = (vehicle) => {
+    //task_set dropdown list component
+    const makeTaskSet = (taskName) => {
         const newEl = document.createElement('option');
-        const newText = document.createTextNode(vehicle);
-        newEl.setAttribute('value', vehicle);
+        const newText = document.createTextNode(taskName);
+        newEl.setAttribute('value', taskName);
         newEl.appendChild(newText);
-        document.getElementById('vehicle').appendChild(newEl);
+        document.getElementById('task_set').appendChild(newEl);
     }
 
-    //load vehicle dropdown list
-    const loadVehicles = (cb) => {
+    //load tasks from server
+    const loadTasks = (cb) => {
         const xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 console.log("loaded: ", this.status, this.readyState);
                 cb(xmlhttp);
-                document.getElementById('vehicle').addEventListener('change', tasks.bind(xmlhttp));
+                document.getElementById('task_set').addEventListener('change', tasks.bind(xmlhttp));
             }
             else {
                 console.log("loading: ", this.status, this.readyState);
             }
         };
-        xmlhttp.open("GET", "vehicles.xml", true);
+        xmlhttp.open("GET", "tasks.xml", true);
         xmlhttp.send();
     }
 
     const dropDownList = (xml) => {
         const names = xml.responseXML.getElementsByTagName("name");
         for (let i = 0; i < names.length; i++) {
-            makeVehicle(names[i].childNodes[0].nodeValue);
+            makeTaskSet(names[i].childNodes[0].nodeValue);
         }
     }
 
-    loadVehicles(dropDownList);
+    loadTasks(dropDownList);
 
     //reset button
     document.getElementById('reset').addEventListener('click', () => {
@@ -65,8 +65,8 @@
 
     function tasks() {
         clearTasks();
-        const pic = document.getElementById('vehicle').selectedIndex -1;
-        const names = this.responseXML.getElementsByTagName("vehicle");
+        const pic = document.getElementById('task_set').selectedIndex -1;
+        const names = this.responseXML.getElementsByTagName("task_set");
         const tasks = names[pic].getElementsByTagName("task");
         for (let i = 0; i < tasks.length; i++) {
             taskButton(tasks[i].childNodes[0].nodeValue);
