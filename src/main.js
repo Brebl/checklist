@@ -9,12 +9,12 @@
     const updateStyle = () => {
         if (toggle.checked) {
             //load both styles at page load
-            style.setAttribute('href', 'day.css');
-            style.setAttribute('href', 'night.css');
+            style.setAttribute('href', 'day.min.css');
+            style.setAttribute('href', 'night.min.css');
         }
         else {
-            style.setAttribute('href', 'night.css');
-            style.setAttribute('href', 'day.css');
+            style.setAttribute('href', 'night.min.css');
+            style.setAttribute('href', 'day.min.css');
         }
         localStorage.setItem('toggleState', toggle.checked);
     }
