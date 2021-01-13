@@ -10,7 +10,9 @@ Simple checklist web-app for mobile devices with lightning fast UI.
 Main idea is that you have preconfigured list of different checklists.  
 You choose from the dropdown menu the correct checklist and then get a list of tasks you have to accomplish.
 By clicking individual task, its color change and gives you a visual signal that you have completed that task.
-![Demo](./demo/ScreenShot.png)
+<p align="left">
+  <img src="./demo/ScreenShot.png" width="350">
+</p>
 	
 ## Technologies  
 Project is created with: 
