@@ -1,1 +1,0 @@
-*{background-color:rgb(20,34,34);transition:1s ease background-color,1s ease color}.task{background:rgb(172,45,45);color:rgb(240,240,240)}.taskDone{background:rgb(29,151,29);color:rgb(240,240,240);animation:mymove 1s}@keyframes mymove{from{background-color:rgb(172,45,45)}to{background-color:rgb(29,151,29)}}
