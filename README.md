@@ -22,5 +22,7 @@ Project is created with:
 	
 ## Setup  
 Checklist items are written in tasks.xml and are downloaded asynchronously after page is visible.  
-Build directory holds current minified .js and .css files.  
+Src directory holds project .js and .css files.  
+Don't forget to minify those files before you deploy. As a cheffs recomendation I would prefer  
+[this](https://github.com/Brebl/minifier) minifier.  
 Public directory contains other assets.  
