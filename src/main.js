@@ -4,16 +4,22 @@
     //set style
     const style = document.querySelector('#style');
     const toggle = document.querySelector('#daynight');
-    toggle.checked = localStorage.getItem('toggleState') === 'true';
+    const toggleState = localStorage.getItem('toggleState');
+    if(toggleState === 'true'){
+        toggle.checked = true;
+    }
+    else if(toggleState === 'false'){
+        toggle.checked = false;
+    }
+    else{
+        toggle.checked = true;
+    }
 
     const updateStyle = () => {
         if (toggle.checked) {
-            //load both styles at page load
-            style.setAttribute('href', 'day.css');
             style.setAttribute('href', 'night.css');
         }
         else {
-            style.setAttribute('href', 'night.css');
             style.setAttribute('href', 'day.css');
         }
         localStorage.setItem('toggleState', toggle.checked);

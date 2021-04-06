@@ -5,14 +5,16 @@
 
 .task {
     background:rgb(212, 28, 28);
+    color: rgb(240, 240, 240);
 }
 
 .taskDone{
-    background:rgb(24, 192, 24);
+    background:rgb(29, 151, 29);
+    color: rgb(240, 240, 240);
     animation: mymove 1s;
 }
   
 @keyframes mymove {
     from {background-color: rgb(212, 28, 28);}
-    to {background-color: rgb(24, 192, 24);}
+    to {background-color: rgb(29, 151, 29);}
 }

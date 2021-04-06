@@ -40,6 +40,7 @@ button {
     display: inline;
     position:relative;
     width: 25%;
+    margin-left: 5px;
     word-wrap:normal;
     background-color:darkgray;
 }

@@ -5,12 +5,12 @@
 
 .task {
     background:rgb(172, 45, 45);
-    color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
 }
 
 .taskDone{
     background:rgb(29, 151, 29);
-    color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
     animation: mymove 1s;
 }
   
